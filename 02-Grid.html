@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap 4 Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+</head>
+<body>
+
+<h2>Grid Classes</h2>
+The Bootstrap 4 grid system has five classes:
+
+<ul>
+<li> .col- (extra small devices - screen width less than 576px) </li>
+<li> .col-sm- (small devices - screen width equal to or greater than 576px) </li>
+<li> .col-md- (medium devices - screen width equal to or greater than 768px) </li>
+<li> .col-lg- (large devices - screen width equal to or greater than 992px) </li>
+<li> .col-xl- (xlarge devices - screen width equal to or greater than 1200px) </li>
+</ul>
+
+<!-- Control the column width, and how they should appear on different devices -->
+class="col-*-*" <br>
+The first star (*) represents the responsiveness: sm, md, lg or xl, while the second star represents a number, which should add up to 12 for each row. <br><br>
+<div class="row">
+  <div class="col-*-*"></div>
+  	class="col-*-*" <br>
+    The first star (*) represents the responsiveness: sm, md, lg or xl, while the second star represents a number, which should add up to 12 for each row. 
+  <div class="col-*-*"></div>
+</div>
+<div class="row">
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+  <div class="col-*-*"></div>
+</div>
+
+<!-- Or let Bootstrap automatically handle the layout -->
+instead of adding a number to each col, let bootstrap handle the layout, to create equal width columns: two "col" elements = 50% width to each col. three cols = 33.33% width to each col. four cols = 25% width, etc. 
+<div class="row">
+  <div class="col"></div>
+  <div class="col"></div>
+  <div class="col"></div>
+</div>
+
+  <h1>Three equal width columns</h1>
+  <p>Note: Try to add a new div with class="col" inside the row class - this will create three equal-width columns.</p>
+  <div class="row">
+    <div class="col" style="background-color:lavender;">.col</div>
+    <div class="col" style="background-color:orange;">.col</div>
+    <div class="col" style="background-color:lavender;">.col</div>
+  </div>
+
+  <h1>Responsive Columns</h1>
+  <p>Resize the browser window to see the effect.</p>
+  <p>The columns will automatically stack on top of each other when the screen is less than 576px wide.</p>
+  <div class="row">
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavender;">.col-sm-3</div>
+    <div class="col-sm-3" style="background-color:lavenderblush;">.col-sm-3</div>
+  </div>
+
+
+
+</body>
+</html>
